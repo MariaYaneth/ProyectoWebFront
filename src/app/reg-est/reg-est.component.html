@@ -1,0 +1,51 @@
+
+  <div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-success">
+                        <h2 class="card-title">Agregar estudiante</h2>
+                    </div>
+                    <div class="card-body">
+                      
+                      <form id="contact" action="" method="post">
+                        <h4>Por favor rellenar todos los campos para el estudiante:</h4>
+                        <fieldset>
+                          <input #ced placeholder="cedula" type="cedula" tabindex="1" required />
+                        </fieldset>
+                        <fieldset>
+                          <input #nom placeholder="Nombre" type="nombre" tabindex="2" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #ape placeholder="Apellidos" type="apellidos" tabindex="3" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #eda placeholder="Edad" type="edad" tabindex="4" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #car placeholder="Carrera" type="carrera" tabindex="5" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #sem placeholder="Semestre" type="semestre" tabindex="6" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #pro placeholder="Promedio" type="promedio" tabindex="7" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #usu placeholder="Usuario" type="usuario" tabindex="8" required/>
+                        </fieldset>
+                        <fieldset>
+                          <input #contra placeholder="Contraseña" type="contraseña" tabindex="9" required/>
+                        </fieldset>
+                        <fieldset>
+                          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" (click)="registrarEstudiante(ced.value, nom.value, ape.value, eda.value, car.value, sem.value, pro.value, usu.value, contra.value)">Crear Usuario</button>
+                        </fieldset>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+

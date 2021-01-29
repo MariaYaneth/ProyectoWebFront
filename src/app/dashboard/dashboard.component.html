@@ -1,0 +1,25 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="col">
+        <div *ngFor="let curso of profesor.cursos" >
+            <div class="col-md-4">
+                <div class="card card-chart">
+                    <div class="card-header card-header-success">
+                      <input type="image" src="https://dev-res.thumbr.io/libraries/45/01/lib/1370151995235.jpg?size=854x493s&ext=jpg" width="300" height="170"
+                      routerLink="/typography/{{curso.codigo}}"/>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">{{curso.nombre}}</h4>
+                        <p class="card-category"> 55% Actividades completadas</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> updated 4 minutes ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+  </div>
+</div>
